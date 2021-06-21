@@ -6,13 +6,13 @@ pipeline {
         }
     }
     stages {
-        stage('git repo & clean') {
-            steps {
-                 sh "rm -rf jenkins_learning"
-                sh "git clone https://github.com/prasanna-tunga23/jenkins_learning.git"
-//                 sh "mvn clean -f jenkins_learning"
-            }
-        }
+//         stage('git repo & clean') {
+//             steps {
+//                  sh "rm -rf jenkins_learning"
+//                 sh "git clone https://github.com/prasanna-tunga23/jenkins_learning.git"
+// //                 sh "mvn clean -f jenkins_learning"
+//             }
+//         }
         stage('Build') {
             steps {
                 sh 'mvn -B -DskipTests clean package'
