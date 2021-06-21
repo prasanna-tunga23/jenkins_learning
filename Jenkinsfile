@@ -20,13 +20,9 @@ pipeline {
         }
         stage('test') {
             steps {
-                sh "mvn test -f jenkins_learning"
+                sh "mvn test"
             }
         }
-        stage('package') {
-            steps {
-                sh "mvn package -f jenkins_learning"
-            }
-        }
+       
     }
 }
