@@ -5,7 +5,7 @@ pipeline {
             steps {
 //                sh "rm -rf TicketBookingServiceJunitTesting"
                 sh "git clone https://github.com/prasanna-tunga23/jenkins_learning.git"
-                sh "mvn clean -f TicketBookingServiceJunitTesting"
+                sh "mvn clean -f jenkins_learning"
             }
         }
         stage('install') {
