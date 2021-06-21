@@ -3,8 +3,8 @@ pipeline {
     stages {
         stage('git repo & clean') {
             steps {
-               sh "rm -rf TicketBookingServiceJunitTesting"
-                sh "git clone https://github.com/kishancs2020/TicketBookingServiceJunitTesting.git"
+//                sh "rm -rf TicketBookingServiceJunitTesting"
+                sh "git clone https://github.com/prasanna-tunga23/TicketBookingServiceJunitTesting.git"
                 sh "mvn clean -f TicketBookingServiceJunitTesting"
             }
         }
